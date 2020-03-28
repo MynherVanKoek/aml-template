@@ -24,6 +24,6 @@ def main(workspace):
         entry_script="train.py",
         script_params=script_params,
         compute_target=compute_target,
-        pip_packages=["azureml-dataprep[pandas,fuse]", "scikit-learn", "pandas", "matplotlib"]
+        conda_dependencies_file="environment.yml"
     )
     return estimator
