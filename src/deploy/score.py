@@ -19,7 +19,8 @@ def init():
     global inputs_dc, prediction_dc
     # The AZUREML_MODEL_DIR environment variable indicates
     # a directory containing the model file you registered.
-    model_path = os.path.join(os.environ.get("AZUREML_MODEL_DIR"), "model.pkl")
+    model_file_name = "model.pkl"
+    model_path = os.path.join(os.environ.get("AZUREML_MODEL_DIR"), model_file_name)
     model = joblib.load(model_path)
     inputs_dc = ModelDataCollector("sample-model", designation="inputs", feature_names=["feat1", "feat2", "feat3", "feat4"])
     prediction_dc = ModelDataCollector("sample-model", designation="predictions", feature_names=["prediction"])
