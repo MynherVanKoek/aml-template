@@ -54,6 +54,6 @@ jobs:
       id: aml_deploy
       uses: Azure/aml-deploy@master
       with:
-          azureCredentials: ${{ secrets.AZURE_CREDENTIALS }}
-          modelName:  ${{ steps.aml_registermodel.outputs.model_name }}
-          modelVersion: ${{ steps.aml_registermodel.outputs.model_version }}
+          azure_credentials: ${{ secrets.AZURE_CREDENTIALS }}
+          model_name:  ${{ steps.aml_registermodel.outputs.model_name }}
+          model_version: ${{ steps.aml_registermodel.outputs.model_version }}
