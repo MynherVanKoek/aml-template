@@ -3,21 +3,21 @@ from azureml.train.estimator import Estimator
 
 
 def main(workspace):
-    # Load compute target
+    # Loading compute target
     print("Loading compute target")
     compute_target = ComputeTarget(
         workspace=workspace,
         name="mycluster"
     )
 
-    # Load script parameters
+    # Loading script parameters
     print("Loading script parameters")
     script_params = {
         "--kernel": "linear",
         "--penalty": 1.0
     }
 
-    # Create experiment config
+    # Creating experiment config
     print("Creating experiment config")
     estimator = Estimator(
         source_directory="src/train",
