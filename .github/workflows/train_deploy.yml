@@ -1,5 +1,5 @@
 # Actions train a model on Azure Machine Learning
-name: aml-train
+name: aml-train-deploy
 
 # Controls when the action will run. Triggers the workflow on push or pull request 
 # events but only for the master branch
