@@ -14,3 +14,4 @@ print(mod)
 
 function = getattr(mod, "main", None)
 function()
+
