@@ -16,7 +16,6 @@ Guidance on onboarding samples to docs.microsoft.com/samples: https://review.doc
 Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
 -->
 
-
 This template can be used for easy setting up of an AML training pipeline.
 
 ## Contents
