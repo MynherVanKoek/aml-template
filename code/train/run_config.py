@@ -14,7 +14,7 @@ def main(workspace):
     print("Loading script parameters")
     script_params = {
         "--kernel": "rbf",
-        "--penalty": 1.0
+        "--penalty": 0.9
     }
 
     # Creating experiment config
