@@ -36,7 +36,7 @@ jobs:
     # Submit a training run to the Azure Machine Learning
     - name: Submit training run
       id: aml_run
-      uses: Azure/aml-run@master
+      uses: Azure/aml-run@runconfig_support
       with:
           azure_credentials: ${{ secrets.AZURE_CREDENTIALS }}
 
